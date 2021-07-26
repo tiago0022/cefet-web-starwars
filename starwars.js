@@ -7,6 +7,7 @@
 import { friendlyFetch } from './friendly-fetch.js';
 import { AudioPlayer } from './music.js';
 import { romano10 } from './roman.js';
+import { restartAnimation } from './restart-animation.js';
 
 const API_ENDPOINT = 'https://swapi.dev/api';
 
@@ -47,6 +48,7 @@ function registraEventoClique(filme, li) {
             ${filme.title}
             
             ${filme.opening_crawl}`;
+        restartAnimation(introducaoEl);
     });
 }
 
